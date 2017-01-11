@@ -6,13 +6,13 @@
 #    By: Niko <niko.caron90@gmail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/12/21 20:02:04 by Niko              #+#    #+#              #
-#    Updated: 2017/01/02 16:18:34 by Niko             ###   ########.fr        #
+#    Updated: 2017/01/07 19:38:39 by Niko             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = get_next_line
 
-FLAGS = -Wall -Wextra -Werror -fsanitize=address
+FLAGS = -Wall -Wextra -Werror -g
 
 SRCS = main.c \
 	   get_next_line.c

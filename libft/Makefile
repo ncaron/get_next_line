@@ -6,7 +6,7 @@
 #    By: Niko <niko.caron90@gmail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/02 19:51:00 by Niko              #+#    #+#              #
-#    Updated: 2016/12/13 17:12:58 by Niko             ###   ########.fr        #
+#    Updated: 2017/01/06 19:51:35 by Niko             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -157,7 +157,7 @@ INCLUDES = libft.h
 all: $(NAME)
 
 $(NAME):
-	@gcc -c $(FLAGS) $(SRCS) $(INCLUDES)
+	@gcc -c -g $(FLAGS) $(SRCS) $(INCLUDES)
 	@ar rc $(NAME) $(BIN)
 
 clean:
