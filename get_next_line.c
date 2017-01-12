@@ -6,14 +6,14 @@
 /*   By: Niko <niko.caron90@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/06 22:57:47 by Niko              #+#    #+#             */
-/*   Updated: 2017/01/11 01:08:06 by Niko             ###   ########.fr       */
+/*   Updated: 2017/01/11 18:44:35 by Niko             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
 /*
-**
+** 
 */
 
 void		lst_free(t_list_gnl **list, int fd)
@@ -64,6 +64,8 @@ char		*lst_read(t_list_gnl *list, int fd)
 	}
 	else
 		line = ft_strsub(current->content, 0, end);
+	if (current->content[end] == '\0')
+		end--;
 	tmp = ft_strdup(&current->content[end + 1]);
 	ft_strdel(&current->content);
 	current->content = ft_strdup(tmp);
